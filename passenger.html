@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODA Connect - Passenger</title>
+  <link rel="stylesheet" href="passenger.css">
+  <script src="function.js" defer></script>
+</head>
+<body>
+
+  <!-- Blue bar -->
+  <div class="top-bar" id="realtime-datetime"></div>
+
+  <!-- Pink bar -->
+  <div class="time-bar">
+    Estimated Time <br>
+    30:59 mins
+  </div>
+
+  <!-- Map -->
+  <iframe 
+    class="map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.958093745169!2d139.69838271525848!3d35.6894879801926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd4b3f2f0f3%3A0xb6c47a2263a3c2aa!2sShinjuku%20City%2C%20Tokyo%2C%20Japan!5e0!3m2!1sen!2sjp!4v1633033700000!5m2!1sen!2sjp" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+
+  <!-- Body number -->
+  <div class="number-box" id="body-number"></div>
+
+  <!-- Passenger info -->
+  <div class="info">
+    <p>Name: <span id="name-inof"></span></p>
+    <p>Plate Number: <span id="plate-info"></span></p>
+    <p>Contact Number: <span id="contact-info"></span></p>
+  </div>
+
+  <!-- Bottom navigation -->
+  <div class="navbar">
+    <button class="nav-btn">📍</button>
+    <button class="nav-btn" onclick="openProfile">👤</button>
+  </div>
+
+  
+
+</body>
+</html>
